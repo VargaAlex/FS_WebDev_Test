@@ -4,7 +4,7 @@
     <meta charset=""utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open Sans'>
-    <title>Web Developer - Test - Alex Varga</title>
+    <title>Test Desktop - Alex Varga</title>
 </head>
 
 <body>
@@ -19,10 +19,43 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus risus metus. Aliquam blandit magna nec turpis mattis accumsan. Mauris eu semper neque. Mauris fringilla, mauris sit amet viverra hendrerit, purus lorem vestibulum ligula, at consequat urna lorem at felis. Phasellus accumsan pulvinar ipsum, <b>quis semper dui mollis ac</b>. Donec et turpis ut sem lobortis blandit in vel neque. Quisque luctus nisl vel dolor rutrum tempor. Donec iaculis facilisis lectus, in pellentesque risus sollicitudin vel. In in augue sed lectus semper feugiat. Nunc a dapibus sem. In ac ultricies sapien.</p>
                         <h3>Item Detail</h3>
                         <p>Aliquam lacus sem, lobortis et risus sed, congue egestas nulla. Morbi vel leo tellus. Phasellus elit sapien, varius vel nunc ac, fringilla ullamcorper massa. Vestibulum faucibus rutrum felis, a sollicitudin est rhoncus quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam eget arcu quis ante tincidunt dignissim.</p>
-                        <p id="disclaimer">Request Additional Information</p>
+                        <p id="disclaimer"><a href="#request">Request Additional Information</a></p>
                     </div>
                 </div>
-                <div class="input">Input</div>
+                <div class="input" id="request">
+                    <h1>Request Info</h1>
+                    <p>Fill out the form for more information or call us at <b><u>844.716.1492</u></b>.</p>
+                    <div class="divider"></div>
+                    <form>
+                        <div class="form_item">
+                            <label for="program">Select One:<span class="required">*</span></label>
+                            <br>
+                            <select id="program" name="program">
+                                <option value="" disabled selected>Choose a program</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form_item">
+                            <label for="program">Your Name<span class="required">*</span></label>
+                            <br>
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form_item">
+                            <label>CHECKBOXES</label><br>
+                            <input type="checkbox" id="box1" name="box1" value="Box 1">
+                            <label for="box1"><span class="checkbox_text">Box 1</span></label><br>
+                            <input type="checkbox" id="box2" name="box2" value="Box 2">
+                            <label for="box2"><span class="checkbox_text">Box 2</span></label><br>
+                            <input type="checkbox" id="box3" name="box3" value="Box 3">
+                            <label for="box3"><span class="checkbox_text">Box 3</span></label><br>
+                        </div>
+                        <div class="form_item">
+                            <input type="submit" value="Submit Request">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="margin"></div>
@@ -35,3 +68,5 @@
     </div>
     <div class="subfooter">© 2024 Full Sail, LLC. All rights reserved.</div>
 </body>
+
+</html>
